@@ -1,75 +1,114 @@
-@import url('http://fonts.cdnfonts.com/css/cassandra-personal-use');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 *{
 margin:0;
 padding:0;
 box-sizing: border-box;
 }
+html {
+    height: 100%
+}
 
 body{
-width:100%;
-height:100vh;
+font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .top{
-padding: 0 50px;
 display:flex;
-flex-direction:row;
 justify-content:space-between;
-align-items:space-between;
-background: linear-gradient(to bottom, rgba(0,0,0,0.8) 10%,rgba(0,0,0,1) 100%);
-color:white;
-position:relative;
-z-index:-1;
+align-items:center;
+width:100%;
+padding:10px;
+
+
+
 }
 
 .left{
 display:flex;
-background-color:red;
-width:30%;
-justify-content:space-around;
-align-items:center;
+
+
+}
+.mail{
+margin-right:20px;
+
+}
+.mail span{
+margin-left:5px;
+
+}
+
+.phone span{
+margin-left:5px
+}
+
+span{
+font-size:18px;
+letter-spacing:1px;
 }
 
 
-.socials{
 
+
+.right{
 display:flex;
-flex-direction:row;
-align-items:center;
-justify-content:space-around;
-height:auto;
-width:30%;
 }
 
-.socials a {
-    color: rgb(206, 206, 206);
+.right a{
+color: rgb(47,36,32);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
     transition: 0.2s;
 }
-.socials a:hover {
-        color: #fff;
-        transition: 0.2s;
-        text-shadow: 1px 1px 20px rgba(0,0,0,1);
-        text-decoration: none
 
-    }
+.right a:hover{
+color: #fff;
+transition: 0.2s;
+text-shadow: 1px 1px 20px rgba(0,0,0,1);
+text-decoration: none;
+}
+
+.instagram{
+margin-right:10px;
+text-decoration:none;
+}
+
+
+/* MEDIA QUERY FOR FIRST TOP BAR*/
+@media screen and (min-width:320px) and (max-width:640px) {
+
+span{
+font-size:14px;}
+.fa-2x{font-size:20px;
+}
+
+
+}
+/* MEDIA QUERY FOR FIRST TOP BAR*/
 
 
 
 
-.navbar-brand{
-margin-top:30px;
-font-size:32px;
-letter-spacing:2px;
+nav{
+background: linear-gradient(to top, rgba(232,180,159,0.5) 5%,rgba(0,0,0,0.8) 10%);
 
 }
 
+.nav-item a{
+font-size:20px;
+letter-spacing:1px;
+font-weight:lighter;
+transform: scale(.9, 1.5);
+
+}
+
+
 section,.carousel,.carousel-inner,.carousel-item{
     height: 100%;
+    background-color:black;
 }
 
 .carousel-item:before{
@@ -79,18 +118,13 @@ content: '';
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0) 50%,rgba(0,0,0,1) 100%);
-    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 30%,rgba(0,0,0,0.8) 100%);
+    z-index:1;
 }
-
-
-
-
-
 
 .carousel-inner .carousel-item > img{
     width: 100%;
-    height: 800px;
+    height: 600px;
     object-fit: cover;
     animation: zoomin 10s linear infinite;
 
