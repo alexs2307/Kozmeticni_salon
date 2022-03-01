@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 *{
 margin:0;
@@ -10,8 +12,17 @@ html {
 }
 
 body{
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Moulpali', serif;
+font-size:20px;
+background-color:white;
 
+
+}
+
+header{
+background:linear-gradient(90deg,rgba(253,185,187,.5), rgba(255,255,255,.5),rgba(253,185,187,.5));
+background-size:cover;
+background-repeat:no-repeat;
 }
 
 .top{
@@ -20,9 +31,6 @@ justify-content:space-between;
 align-items:center;
 width:100%;
 padding:10px;
-
-
-
 }
 
 .left{
@@ -80,17 +88,27 @@ text-decoration:none;
 /* MEDIA QUERY FOR FIRST TOP BAR*/
 @media screen and (min-width:320px) and (max-width:640px) {
 
+
+
 span{
-font-size:14px;}
-.fa-2x{font-size:15px;
+font-size:11px;
+}
+.mail span{
+margin-left:1px;
+
+}
+
+.phone span{
+margin-left:1px
+}
+
+.fa-2x{
+font-size:13px;
 }
 
 
 }
 /* MEDIA QUERY FOR FIRST TOP BAR*/
-
-
-
 
 nav{
 background: linear-gradient(to top, rgba(232,180,159,0.5) 5%,rgba(0,0,0,0.8) 10%);
@@ -98,18 +116,49 @@ background: linear-gradient(to top, rgba(232,180,159,0.5) 5%,rgba(0,0,0,0.8) 10%
 }
 
 .nav-item a{
-font-size:20px;
+font-size:15px;
 letter-spacing:1px;
 font-weight:lighter;
 transform: scale(.9, 1.5);
+color:white;
 
 }
 
 
-section,.carousel,.carousel-inner,.carousel-item{
-    height: 100%;
-    background-color:black;
+#nav a{
+color:white;
 }
+
+
+.nav-item a:after{
+  position:absolute;
+  display:inline-block;
+  background:rgb(226,185,195);
+  content:" ";
+  width:0;
+  height:0;
+  transition:.35s ease;
+  margin:0;
+}
+.nav-item a:hover{
+ color:#4285F4;
+}
+.nav-item a:after{
+  bottom:0;
+  left:0;
+  right:0;
+  height:1.5px;
+  margin:0 auto;
+
+}
+.nav-item a:hover:after{
+  width:100%;
+}
+
+.nav-link a{
+color:red;
+}
+
 
 .carousel-item:before{
 content: '';
@@ -118,7 +167,7 @@ content: '';
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 30%,rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 30%,rgba(0,0,0,0.6) 100%);
     z-index:1;
 }
 
@@ -163,3 +212,174 @@ content: '';
     transform: translateY(-50%);
     bottom: inherit;
 }
+
+
+/* SERVICES -STORITVE */
+.services{
+
+
+
+}
+/*TITLE/AND HR LINE*/
+.title1{
+text-align:center;
+margin-top:40px;
+margin-bottom:20px;
+text-transform:uppercase;
+
+}
+
+.separator{
+  display:flex;
+  align-items: center;
+}
+
+.separator .line{
+  height: 1px;
+  flex: 1;
+  background-color: #000;
+}
+
+.separator img{
+  padding: 0 1rem 0 1rem;
+  width:150px;
+}
+
+
+
+#serv{
+margin-top:20px;
+background:linear-gradient(90deg,rgba(253,185,187,.5), rgba(255,255,255,.5),rgba(253,185,187,.5)),url("/static/img/bg-storitve.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+
+}
+
+
+/*CARDS*/
+
+
+.card{
+
+background:none;
+border:none;
+margin-top:10px;
+}
+
+
+
+.card-body{
+font-family: 'Old Standard TT', serif;
+text-align:center;
+color:black;
+}
+
+.card-title{
+text-transform:uppercase;
+
+}
+
+
+.card-img {
+overflow:hidden;
+border:4px solid white;
+width:70%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.card-img-top{
+object-fit:cover;
+object-position: center;
+}
+
+.card-img img{
+transition:all 1.3s ease;
+
+}
+
+.card-img:hover img{
+transform:scale(1.2);
+}
+
+/*DARILNI BON*/
+
+
+#darilni{
+margin-bottom:20px;
+}
+
+#bon{
+display:flex;
+justify-content:center;
+align-items:center;
+height:500px;
+overflow:hidden;
+}
+
+/* MEDIA QUERY FOR darilni bon*/
+@media screen and (min-width:320px) and (max-width:640px) {
+#bon{
+height:100%;
+width:100%;
+overflow:hidden;
+}
+
+.photo{
+height:30px;
+}
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+
+}
+
+/* MEDIA QUERY FOR darilni bon*/
+
+
+.photo{
+height:350px;
+width: 100%;
+}
+.photo img{
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title2{
+text-align:center;
+font-family: 'Allura';
+}
+
+#text1{
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.text{
+padding:20px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+background-color:rgb(255,255,224);
+
+}
+
+
+/* Kozmetika */
+
+.dermapic{
+height:auto;
+}
+
+.dermapic img{
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
