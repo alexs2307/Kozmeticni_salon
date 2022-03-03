@@ -54,7 +54,7 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav" id="nav">
             <li class="nav-item">
-              <a class="nav-link" href="/">DOMOV</a>
+              <a class="nav-link active" href="/">DOMOV</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">STORITVE</a>
@@ -224,11 +224,11 @@
 </div>
         </div>
 <div class="container-fluid" id="bon" style="background:linear-gradient(90deg,rgba(253,185,187,.5), rgba(255,255,255,.5),rgba(253,185,187,.5)),url('/static/img/bg-text.jpg');">
-    <div class="row g-2">
+    <div class="row g-4 align-items-center">
        <div class="col-md-7">
            <div class="container" id="photo1">
            <div class="photo">
-        <img src="/static/img/img-6.jpg">
+        <img class="img-fluid" src="/static/img/img-6.jpg" alt="Lepotni studio - Darilni bon">
             </div>
                </div>
        </div>
@@ -264,17 +264,35 @@
 </div>
         </div>
  <div class="container">
-     <div class="row g-4">
-         <div class="col-md-3" style="background-color:black;">
-             <p>hello</p>
+     <div class="row g-4 align-items-center">
+         <div class="col-md-4 " style="background:linear-gradient(90deg,rgba(253,185,187,.4), rgba(255,255,255),rgba(253,185,187,.4));">
+             <p class="dermatext"> V Dermalogici že več kot dvajset let razvijajo izdelke na podlagi filozofije, da je koža lahko zares lepa le, če je negovana.
+                <br>
+                 <br>
+                Zato so vse sestavine, ki jih vsebujejo izdelki Dermalogice, neoporečni in izjemno kakovostni, kar zagotavlja negovano in popolno kožo.
+                <br>
+                 <br>
+                Negovano kožo najlažje ohranite z uporabo linije izdelkov, specifično prilagojene vaši koži.</p>
          </div>
-         <div class="col-md-6">
+         <div class="col-md-4">
              <div class="dermapic">
-                 <img src="/static/img/derma.jpg">
+                 <img src="/static/img/derma.png">
+                 <img src="/static/img/derma2.jpg">
              </div>
          </div>
-         <div class="col-md-3" style="background-color:red;">
-             <p>hello</p>
+         <div class="col-md-4">
+             <div class="icon3">
+                <img src="/static/img/icon1.png" width="auto" height="50" alt="..."><span>CERTIFIKAT VEGAN</span>
+             </div>
+              <div class="icon1">
+                <img src="/static/img/icon2.png" width="50" height="50" alt="..."><span>BREZ UMETNIH BARVIL IN DIŠAV</span>
+             </div>
+              <div class="icon1">
+                <img src="/static/img/icon4.png" width="50" height="50" alt="..."><span>CERTIFIKAT FSC</span>
+             </div>
+              <div class="icon2">
+                <img src="/static/img/icon3.png" width="50" height="50" alt="..."><span>90% MOŽNOST RECIKLIRANJA ALI BIOLOŠKE RAZGRADNJE</span>
+             </div>
          </div>
 
 
@@ -285,12 +303,17 @@
 
 
 <script>
-    $(function() {
-        $(document).scroll(function() {
-            var $nav = $("#mainNavbar");
-            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-    });
+var linkClicked = document.getElementsByClassName('nav-link');
+var numClass = linkClicked.length;
+
+for (var i = 0; i < numClass; i++) {
+		linkClicked[i].addEventListener('click', function(){
+      var onTheMoment = document.getElementsByClassName('active');
+			onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
+			this.className += ' active';
+    }, false);
+	}
+
 </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
 

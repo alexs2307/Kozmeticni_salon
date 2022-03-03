@@ -88,8 +88,6 @@ text-decoration:none;
 /* MEDIA QUERY FOR FIRST TOP BAR*/
 @media screen and (min-width:320px) and (max-width:640px) {
 
-
-
 span{
 font-size:11px;
 }
@@ -110,6 +108,8 @@ font-size:13px;
 }
 /* MEDIA QUERY FOR FIRST TOP BAR*/
 
+/* NAVBAR */
+
 nav{
 background: linear-gradient(to top, rgba(232,180,159,0.5) 5%,rgba(0,0,0,0.8) 10%);
 
@@ -124,40 +124,45 @@ color:white;
 
 }
 
-
-#nav a{
-color:white;
+ul a:hover{
+  color: #F8A6AE !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #F8A6AE;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #F8A6AE !important;
 }
 
 
-.nav-item a:after{
-  position:absolute;
-  display:inline-block;
-  background:rgb(226,185,195);
-  content:" ";
-  width:0;
-  height:0;
-  transition:.35s ease;
-  margin:0;
+@media screen and (min-width:320px) and (max-width:640px){
+.navbar-nav{
+padding-bottom:35px;
 }
-.nav-item a:hover{
- color:#4285F4;
-}
-.nav-item a:after{
-  bottom:0;
-  left:0;
-  right:0;
-  height:1.5px;
-  margin:0 auto;
-
-}
-.nav-item a:hover:after{
-  width:100%;
 }
 
-.nav-link a{
-color:red;
+@media screen and (min-width:768px) and (max-width:768px){
+.navbar-nav{
+padding-bottom:35px;
 }
+}
+
+
+
+/*NAVBAR*/
 
 
 .carousel-item:before{
@@ -215,11 +220,7 @@ content: '';
 
 
 /* SERVICES -STORITVE */
-.services{
 
-
-
-}
 /*TITLE/AND HR LINE*/
 .title1{
 text-align:center;
@@ -249,7 +250,7 @@ text-transform:uppercase;
 
 #serv{
 margin-top:20px;
-background:linear-gradient(90deg,rgba(253,185,187,.5), rgba(255,255,255,.5),rgba(253,185,187,.5)),url("/static/img/bg-storitve.jpg");
+background:linear-gradient(90deg,rgba(253,185,187,.3), rgba(255,255,255,.5),rgba(253,185,187,.3));
 background-size:cover;
 background-repeat:no-repeat;
 overflow:hidden;
@@ -320,19 +321,46 @@ overflow:hidden;
 
 /* MEDIA QUERY FOR darilni bon*/
 @media screen and (min-width:320px) and (max-width:640px) {
-#bon{
-height:100%;
-width:100%;
+
+#photo1{
+height:200px;
+width:auto;
 overflow:hidden;
 }
 
-.photo{
-height:30px;
+.photo img{
+height:100%
+width:100%
+object-fit:contain;
+}
+
+.text{
+font-size:14px;
 }
 }
 
-@media (min-width:768px) and (max-width: 1024px) {
+@media screen and  (min-width:768px) and (max-width: 768px) {
+#bon{
+display:flex;
+align-items:center;
+justify-content:center;
+height:500px;
+overflow:hidden;
+}
 
+#photo1{
+display:flex;
+justify-content:center;
+height:100%;
+width:100%;
+align-items:center;
+}
+
+
+
+.text{
+font-size:18px;
+}
 
 }
 
@@ -374,7 +402,8 @@ background-color:rgb(255,255,224);
 /* Kozmetika */
 
 .dermapic{
-height:auto;
+height:100%;
+
 }
 
 .dermapic img{
@@ -383,3 +412,51 @@ width: 100%;
   object-fit: cover;
 }
 
+.dermatext{
+padding:20px;
+}
+
+/* MEDIA QUERY FOR KOZMETIKA smaller Text -mobile*/
+@media screen and (min-width:320px) and (max-width:640px) {
+.dermatext{
+font-size:14px;
+}
+}
+
+@media screen and  (min-width:768px) and (max-width: 768px) {
+.dermatext{
+font-size:18px;
+}
+}
+/* MEDIA QUERY FOR KOZMETIKA smaller Text -mobile*/
+
+.icon1{
+display:flex;
+align-items:center;
+margin-bottom:40px;
+
+}
+.icon1 span{
+margin-left:10px;
+}
+
+.icon2{
+display:flex;
+align-items:center;
+}
+
+.icon2 span{
+margin-left:10px;
+}
+
+.icon3{
+display:flex;
+align-items:center;
+margin-bottom:40px;
+}
+
+
+
+.icon3 span{
+margin-left:10px;
+}
