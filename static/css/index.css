@@ -13,7 +13,6 @@ html {
 
 body{
 font-family: 'Moulpali', serif;
-font-size:20px;
 background-color:white;
 
 
@@ -37,23 +36,27 @@ padding:10px;
 .left{
 display:flex;
 
-
 }
 .mail{
 margin-right:20px;
 
 }
+.mail .fa{
+font-size:20px;
+}
 .mail span{
 margin-left:5px;
 
 }
-
+.phone .fa{
+font-size:20px;
+}
 .phone span{
 margin-left:5px
 }
 
 span{
-font-size:18px;
+font-size:16px;
 letter-spacing:1px;
 }
 
@@ -125,14 +128,14 @@ color:white;
 
 }
 
-ul a:hover{
+nav ul a:hover{
   color: #F8A6AE !important;
 }
 nav li{
     text-align: center;
     text-transform: uppercase;
 }
-li > a:after{
+nav li > a:after{
     content: '';
     display: block;
     height: 1.5px;
@@ -140,7 +143,7 @@ li > a:after{
     transform: scaleX(0);
     transition: transform .3s;
 }
-li > a:hover:after{
+nav li > a:hover:after{
     transform: scaleX(1);
     transition: transform .3s;
 }
@@ -451,6 +454,13 @@ margin-left:10px;
 }
 
 /*footer*/
+footer{
+
+background:linear-gradient(90deg,rgba(253,185,187,.7), rgba(255,255,255,.9),rgba(253,185,187,.7));
+border-bottom-left-radius: 50% 40%;
+border-bottom-right-radius: 50% 40%;
+}
+
 
 .separator{
 margin-top:30px;
@@ -462,10 +472,36 @@ margin-top:-65px;
 .line{
 margin-top:-52px;
 }
+h5{
+text-transform:uppercase;
 
-.location{
+}
+.location,.schedule,.follow,.soc-links{
 display:flex;
 justify-content:center;
+
 font-size:15px;
+
 }
 
+.location a{
+ color: inherit;
+text-decoration:none;
+}
+
+.location a:hover{
+color: #fff;
+transition: 0.2s;
+text-shadow: 1px 1px 20px rgba(0,0,0,1);
+}
+
+.soc-links a{
+text-decoration:none;
+color:inherit;
+}
+
+.soc-links a:hover{
+color: #fff;
+transition: 0.2s;
+text-shadow: 1px 1px 20px rgba(0,0,0,1);
+}

@@ -11,17 +11,17 @@
       <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 	  <!-- Custom CSS -->
   <link rel="stylesheet" href="static/css/index.css">
-    <title>Lepotni Studio Anais</title>
+    <title>{% block title %}{% endblock %}Lepotni Studio Anais</title>
   </head>
   <body>
     <header>
   <div class="top">
     <div class="left">
       <div class="mail">
-      <i class="fa fa-envelope-o fa-2x"></i><span>lepotnistudioanais@gmail.com</span>
+      <i class="fa fa-envelope-o fa-1x"></i><span>lepotnistudioanais@gmail.com</span>
         </div>
       <div class="phone">
-      <i class="fa fa-phone fa-2x"></i>
+      <i class="fa fa-phone fa-1x"></i>
        <span>+386 40 590 177</span>
         </div>
     </div>
@@ -295,34 +295,45 @@
          </div>
      </div>
  </div>
-<footer style="background: linear-gradient(to top, rgba(232,180,159,0.5) 5%,rgba(0,0,0,0.6) 90%);">
+<footer>
         <div class="separator">
   <div class="line"></div>
     <img src="/static/img/spa.png">
     <div class="line"></div>
 </div>
     <div class="container">
-    <div class="row g-3">
-    <div class="col-md-4 mx-auto mb-4">
+    <div class="row align-items-center;">
+    <div class="col-md-4 col-sm-6 mb-3">
         <h5 style="text-align:center; margin-bottom:20px;"> Lepotni Studio Anais</h5>
         <div class="location">
             <ul class="list-unstyled">
             <li class="my-2 mb-1"><i class="fa fa-map-marker mx-3"></i>Spodnje Škofije 207</li>
                 <li class="my-2 mx-5 mb-1">6281 Škofije</li>
                 <li class="my-2 mb-1"><i class="fa fa-phone mx-3"></i>+386 40 590 177</li>
-                <li class="my-2 mb-1"><i class="fa fa-envelope mx-3"></i><a href="lepotnistudioanais@gmail.com">lepotnistudioanais@gmail.com</a></li>
+                <li class="my-2 mb-1"><i class="fa fa-envelope mx-3"></i><a href="mailto:lepotnistudioanais@gmail.com">lepotnistudioanais@gmail.com</a></li>
           </ul>
             </div>
     </div>
-<div class="col-md-4">
-    <div class="contact">
-     <p>One of two columns</p>
+<div class="col-md-4 col-sm-6 mb-3">
+    <h5 style="text-align:center; margin-bottom:20px;">delovni čas</h5>
+    <div class="schedule">
+     <ul class="list-unstyled">
+        <li class="my-2 mb-1"><i class="fa fa-calendar mx-2" aria-hidden="true"></i>Ponedeljek-petek</li>
+         <li class="my-2 mb-3"><i class="fa fa-clock-o mx-2" aria-hidden="true"></i>8:00-19:00</li>
+         <li class="my-2 mb-1"><i class="fa fa-calendar mx-2" aria-hidden="true"></i>Sobota-nedelja-prazniki</li>
+         <li class="my-2 mb-2"><i class="fa fa-clock-o mx-2" aria-hidden="true"></i>ZAPRTO</li>
+     </ul>
         </div>
     </div>
-        <div class="col-md-4">
-            <div class="schedule">
-      <p>One of two columns</p>
+        <div class="col-md-4 col-sm-6 mb-3">
+            <h5 style="text-align:center; margin-bottom:20px;">Sledite nam</h5>
+            <div class="follow">
+      <p>Sledite nam na družbenih omrežjih in bodite<br> na tekočem z akcijami in novostmi.</p>
             </div>
+            <div class="soc-links">
+                <a href="https://www.facebook.com/pages/category/Beauty--cosmetic---personal-care/Lepotni-Studio-Anais-426593567492815/" target="_blank"><i class="fa fa-facebook-square mx-2" style="font-size:40px"></i></a>
+                <a href="https://www.instagram.com/lepotni_studio_anais/" target="_blank"><i class="fa fa-instagram mx-2" style="font-size:40px"></i></a>
+                </div>
     </div>
 
 
