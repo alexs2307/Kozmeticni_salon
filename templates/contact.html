@@ -92,7 +92,7 @@
     <div class="container">
         <div class="row text-center justify-content-center pt-5">
             <div class="col-12 col-md-7">
-                <h1>Rezervirajte termin</h1>
+                <h1>Kontaktirajte nas</h1>
             </div>
         </div>
 
@@ -194,10 +194,11 @@ for (var i = 0; i < numClass; i++) {
     <script>
         function sendEmail(){
           Email.send({
+            SecureToken: "6d226946-ae71-4051-bd2b-95e9f0769623",
             Host : "smtp.gmail.com",
             Username : "freelancingaa2021@gmail.com",
-            Password : "qpyezlizqcvxoobt",
-            To : 'freelancingaa2021@gmail.com',
+
+            To : 'sold.alex@gmail.com',
 
             From :document.getElementById("email").value,
             Subject : "Sporočilo iz spletne strani",
