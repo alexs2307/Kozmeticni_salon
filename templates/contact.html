@@ -204,7 +204,14 @@ for (var i = 0; i < numClass; i++) {
                  +"<br> Email: " + document.getElementById("email").value
                  +"<br> Sporočilo: " + document.getElementById("message").value
                 }).then(
-            message => alert("Sporočilo je bilo poslano")
+            message =>{
+                      if(message=="OK"){
+                        window.location.replace("success.html")
+                        }
+                      else{
+                        window.location.replace("error.html")
+                        }
+            }
         );
         }
     </script>

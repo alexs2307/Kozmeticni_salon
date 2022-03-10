@@ -30,6 +30,9 @@ def gallery():
 def contact():
     return render_template("contact.html")
 
+@app.route("/success.html")
+def success():
+    return render_template("success.html")
 
 
 
