@@ -165,6 +165,14 @@ nav li > a:hover:after{
 .navbar-nav{
 padding-bottom:35px;
 }
+.navbar-brand{
+height:80px;
+width:80px;
+margin-left:10px;
+}
+.navbar-toggler{
+margin-right:10px;
+}
 }
 
 @media screen and (min-width:768px) and (max-width:768px){
