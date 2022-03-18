@@ -17,7 +17,15 @@
   <link rel="stylesheet" href="static/css/index.css">
       <link rel="stylesheet" href="static/css/gallery.css">
       <link rel="stylesheet" href="static/css/contact.css">
-    <title>Lepotni Studio Anais</title>
+    <title>Lepotni Studio Anais-Kontakt</title>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZXT2MLDV"></script>
+      <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X8ZXT2MLDV');
+</script>
   </head>
   <body>
     <header>
@@ -205,8 +213,8 @@ for (var i = 0; i < numClass; i++) {
             From :document.getElementById("email").value,
             Subject : "Sporočilo iz spletne strani",
             Body : "Ime in Priimek: " + document.getElementById("name").value
-                 +"<br> Email: " + document.getElementById("email").value
-                 +"<br> Sporočilo: " + document.getElementById("message").value
+                 +"<br><br> Email: " + document.getElementById("email").value
+                 +"<br><br> Sporočilo: " + document.getElementById("message").value
                 }).then(
             message =>{
                       if(message=="OK"){
