@@ -310,6 +310,8 @@ color:black;
 
 .card-title{
 text-transform:uppercase;
+font-weight:bold;
+margin-bottom:20px;
 }
 
 .card-text{
@@ -366,7 +368,7 @@ width:100%;
 text-align:center;
 }
 .card-title {
-font-size:13px;
+font-size:16px;
 }
 
 .card-img {
