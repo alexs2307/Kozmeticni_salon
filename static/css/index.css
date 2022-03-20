@@ -310,7 +310,10 @@ color:black;
 
 .card-title{
 text-transform:uppercase;
+}
 
+.card-text{
+text-align:center;
 }
 
 
@@ -336,6 +339,7 @@ transition:all 1.3s ease;
 transform:scale(1.2);
 }
 
+
 /*DARILNI BON*/
 
 
@@ -352,6 +356,14 @@ overflow:hidden;
 }
 /* MEDIA QUERY FOR Storitve*/
 @media screen and (min-width:320px) and (max-width:640px) {
+.card{
+
+width:100%;
+
+}
+.card-body{
+text-align:center;
+}
 .card-title {
 font-size:13px;
 }
@@ -359,7 +371,11 @@ font-size:13px;
 .card-img{
 width:100%;
 }
+.card-text{
+font-size:13px;
+width:100%;
 
+}
 }
 /* MEDIA QUERY FOR Storitve*/
 
