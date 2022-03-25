@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip3 install flask
+RUN pip install flask
 
 ENV FLASK_APP=app.py
 
