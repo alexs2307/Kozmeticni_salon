@@ -1,5 +1,5 @@
-Flask
-gunicorn==19.9.0
+Flask==1.1.2
+gunicorn==20.1.0
 WTForms
 Flask-Mail
 email_validator
