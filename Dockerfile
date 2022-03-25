@@ -1,16 +1,15 @@
 
-FROM python:3.9-slim-buster
+FROM python:alpine3.9
 
-RUN mkdir "app"
 
 WORKDIR /app
 
 COPY . /app
 
-RUN pip install flask
-
-ENV FLASK_APP=app.py
+RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+ENTRYPOINT ["python"]
+
+CMD ["app.py"]
