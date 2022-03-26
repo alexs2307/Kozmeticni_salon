@@ -1,11 +1,4 @@
 {
-	"schemaVersion" :2 ,
-	"dockerfileLines" :[
-		"FROM python:3.9.7-alpine",
-		"COPY ./ /app",
-		"WORKDIR /app",
-		"RUN ls -a",
-		"RUN pip3 install -r requirements.txt",
-		"CMD [ \"gunicorn\", \"--bind\", \"0.0.0.0:5555\", \"wsgi:app\" ]"
-	]
+    "schemaVersion": 2,
+    "dockerfilePath": "./Dockerfile"
 }
