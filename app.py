@@ -36,7 +36,7 @@ def contact():
         email = request.form.get('email')
         message = request.form.get('message')
 
-        msg = Message(subject='Lepotni studio Anais',body=f"Ime in Priimek: {name}\n\nE-mail: {email}\n\n\n{message}", sender='Spletna Stran' , recipients=['sold.alex@gmail.com'])
+        msg = Message(subject='Lepotni studio Anais',body=f"Ime in Priimek: {name}\n\nE-mail: {email}\n\n\n{message}", sender='Spletna Stran' , recipients=['lepotnistudioanais@gmail.com'])
         mail.send(msg)
         return render_template("contact.html", success=True)
 
