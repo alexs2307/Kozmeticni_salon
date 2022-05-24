@@ -1,14 +1,14 @@
-from flask import Flask, render_template,request,redirect
+from flask import Flask, render_template,request
 from flask_mail import Mail,Message
-from config import mail_username,mail_password
+
 
 
 app = Flask(__name__)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = mail_username
-app.config['MAIL_PASSWORD'] = mail_password
+app.config['MAIL_USERNAME'] = "spletnastran2022@gmail.com"
+app.config['MAIL_PASSWORD'] = "wsoqyoaqhapgdxnm"
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
